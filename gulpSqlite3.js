@@ -7,7 +7,7 @@ var gutil = require('gulp-util'),
 const PLUGIN_NAME = 'gulp-sqlite3';
 
 
-// 
+// Constructor
 function gulpSqlite3(filename) {
 
 	// Validation

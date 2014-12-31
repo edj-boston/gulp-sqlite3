@@ -4,7 +4,11 @@
   "description": "A gulp module that executes sql files against a SQLite database.",
   "main": "gulpSqlite3.js",
   "scripts": {
+    "pretest": "jshint gulpSqlite3.js test/",
     "test": "mocha --reporter spec"
+  },
+  "jshintConfig": {
+    "esnext": true
   },
   "repository": {
     "type": "git",
@@ -27,5 +31,9 @@
     "should": "^4.4.2",
     "sqlite3": "^3.0.4",
     "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.11",
+    "mocha": "^2.1.0"
   }
 }
