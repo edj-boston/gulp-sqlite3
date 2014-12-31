@@ -1,0 +1,31 @@
+{
+  "name": "gulp-sqlite3",
+  "version": "0.0.1",
+  "description": "A gulp module that executes sql files against a SQLite database.",
+  "main": "gulpSqlite3.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://edj-boston@github.com/edj-boston/gulp-sqlite3.git"
+  },
+  "keywords": [
+    "gulp",
+    "sqlite3",
+    "sql",
+    "ddl"
+  ],
+  "author": "Eric Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edj-boston/gulp-sqlite3/issues"
+  },
+  "homepage": "https://github.com/edj-boston/gulp-sqlite3",
+  "dependencies": {
+    "gulp-util": "^3.0.1",
+    "should": "^4.4.2",
+    "sqlite3": "^3.0.4",
+    "through2": "^0.6.3"
+  }
+}
