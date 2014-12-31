@@ -1,7 +1,7 @@
 Gulp SQLite3
 ============
 
-A gulp module that executes sql files against a SQLite database.
+This is a gulp module that executes sql files against a SQLite database. It's useful for installing a new database or setting up a test database for integration tests.
 
 
 Installation
@@ -13,7 +13,7 @@ Install with NPM.
 npm install gulp-sqlite3
 ```
 
-Include the module in your `gulpfile.js`.
+Include the module at the top of your `gulpfile.js`.
 
 ```js
 gulpSqlite3 = require('gulp-sqlite3');
@@ -23,7 +23,9 @@ gulpSqlite3 = require('gulp-sqlite3');
 Usage
 -----
 
-Source some sql or ddl files (with globs and pipe the gulp-sqlite3 method.
+The only argument is a string representing the SQLite database file. A ":memory:" is also acceptable and specifies an in-memory database.
+
+DEfine a gulp task that sources some sql or ddl files (with globs) and pipe in the gulp-sqlite3 method with a database string.
 
 ```js
 // Initialize DB
@@ -46,3 +48,14 @@ gulp.task('db', function() {
 		]).pipe(gulpSqlite3('sqlite3.db'));
 });
 ```
+
+Acknowledgments
+---------------
+
+This module relies heavily on the [node-sqlite](https://github.com/mapbox/node-sqlite3) module provided by [MapBox](https://github.com/mapbox/node-sqlite3)
+
+
+License
+-------
+
+`gulp-sqlite3` is [MIT licensed](../../raw/master/LICENSE).
