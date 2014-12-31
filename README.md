@@ -1,4 +1,4 @@
-Gulp SQLite3
+Gulp SQLite3 [![Build Status](https://travis-ci.org/edj-boston/gulp-sqlite3.svg?branch=master)](https://travis-ci.org/edj-boston/gulp-sqlite3)
 ============
 
 This is a gulp module that executes sql files against a SQLite database. It's useful for installing a new database or setting up a test database for integration tests.
